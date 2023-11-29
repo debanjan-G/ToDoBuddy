@@ -121,7 +121,7 @@ footer {
     text-align: center;
     height: 60px;
     color: white;
-    background: #101820;
+    /* background: #101820; */
 }
 
 /* Media query for screens smaller than 576px */
