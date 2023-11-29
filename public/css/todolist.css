@@ -1,0 +1,141 @@
+body {
+    height: 100vh;
+    color: #E5CFF7;
+    font-family: 'AR One Sans', sans-serif;
+    background-image: linear-gradient(to right top, #0F0F0F, #232D3F, #232D3F);
+    background-size: cover;
+    /* Add this line */
+    background-repeat: no-repeat;
+    /* Ensure no repeating */
+    background-attachment: fixed;
+    /* Optional: fixes background while scrolling */
+}
+
+
+hr {
+    border: 0;
+    height: 0;
+    width: 75%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: #FEE715;
+}
+
+.container {
+    min-width: 30rem;
+    margin-top: 100px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading {
+    min-width: 30rem;
+    text-align: center;
+    background-color: #101820;
+    color: #FEE715;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.list-items {
+    padding: 1rem 0;
+    margin: 50px;
+    color: #FEE715;
+    min-width: 30rem;
+    text-align: left;
+    border-radius: 10px;
+    min-height: 10rem;
+    font-size: 1.5rem;
+    background-color: #101820;
+}
+
+.my-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.my-form input {
+    color: #FEE715;
+    outline: none;
+    padding: 5px;
+    font-size: 1.3rem;
+    min-width: 20rem;
+    min-height: 2rem;
+    background-color: #101820;
+    border: none;
+}
+
+.my-form input:focus {
+    border-bottom: 2px solid #FEE715;
+}
+
+.list-item {
+    margin: 30px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
+
+input[type=checkbox]:checked+label.strikethrough {
+    text-decoration: line-through;
+}
+
+.btn {
+    padding: 5px;
+    font-size: 2.25rem;
+    background-color: #FEE715;
+    border: 1px solid #E2D1F9;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    color: #101820;
+    opacity: 0.85;
+    margin: 0px 10px;
+}
+
+.check {
+    height: 25px;
+    width: 25px;
+    margin-right: 1rem;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* Default styles for the footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    height: 60px;
+    color: white;
+    background: #101820;
+}
+
+/* Media query for screens smaller than 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        padding-bottom: 80px; /* Add some bottom padding to create space for the footer */
+    }
+
+    footer {
+        position: fixed; /* Keep the footer position as fixed */
+        width: 100%; /* Set width to 100% to occupy the full width */
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
