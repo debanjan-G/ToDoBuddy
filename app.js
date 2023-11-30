@@ -11,12 +11,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 require("dotenv").config();
 
-let mypassword = process.env.MONGO_DB_PASSWORD; //Must use environment variables for this
+let connectionUrl = process.env.MONGO_DB_URL;
 
 mongoose
-  .connect(
-    `mongodb+srv://debanjanghosal10:${mypassword}@cluster0.p36mcg2.mongodb.net/todolistDB`
-  )
+  .connect(connectionUrl)
   .then(() => {
     console.log("Connection with DB is successful!");
   })
