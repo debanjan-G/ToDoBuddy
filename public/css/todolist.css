@@ -127,15 +127,24 @@ footer {
 /* Media query for screens smaller than 576px */
 @media screen and (max-width: 576px) {
     .container {
-        padding-bottom: 80px; /* Add some bottom padding to create space for the footer */
+        padding-bottom: 80px;
+        /* Add some bottom padding to create space for the footer */
     }
 
     footer {
-        position: fixed; /* Keep the footer position as fixed */
-        width: 100%; /* Set width to 100% to occupy the full width */
+        position: fixed;
+        /* Keep the footer position as fixed */
+        width: 100%;
+        /* Set width to 100% to occupy the full width */
         left: 0;
         right: 0;
         bottom: 0;
     }
 }
 
+@media screen and (max-width: 540px) {
+    .list-items {
+        margin: 30px 20px;
+        /* Add margin to both sides */
+    }
+}
