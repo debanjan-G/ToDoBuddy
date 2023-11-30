@@ -4,13 +4,9 @@ body {
     font-family: 'AR One Sans', sans-serif;
     background-image: linear-gradient(to right top, #0F0F0F, #232D3F, #232D3F);
     background-size: cover;
-    /* Add this line */
     background-repeat: no-repeat;
-    /* Ensure no repeating */
     background-attachment: fixed;
-    /* Optional: fixes background while scrolling */
 }
-
 
 hr {
     border: 0;
@@ -25,7 +21,6 @@ hr {
     min-width: 30rem;
     margin-top: 100px;
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
 }
@@ -40,10 +35,10 @@ hr {
 }
 
 .list-items {
-    padding: 1rem 0;
-    margin: 50px;
+    padding: 1rem;
+    margin: 30px 50px; /* Default margin */
     color: #FEE715;
-    min-width: 30rem;
+    min-width: calc(100% - 100px); /* Default width */
     text-align: left;
     border-radius: 10px;
     min-height: 10rem;
@@ -55,7 +50,6 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .my-form input {
@@ -80,9 +74,6 @@ hr {
     justify-content: flex-start;
     align-items: center;
 }
-
-
-
 
 input[type=checkbox]:checked+label.strikethrough {
     text-decoration: line-through;
@@ -121,30 +112,34 @@ footer {
     text-align: center;
     height: 60px;
     color: white;
-    /* background: #101820; */
 }
 
 /* Media query for screens smaller than 576px */
 @media screen and (max-width: 576px) {
     .container {
         padding-bottom: 80px;
-        /* Add some bottom padding to create space for the footer */
     }
 
     footer {
         position: fixed;
-        /* Keep the footer position as fixed */
         width: 100%;
-        /* Set width to 100% to occupy the full width */
         left: 0;
         right: 0;
         bottom: 0;
     }
+
+    .list-items {
+        margin: 30px 10px;
+        min-width: calc(100% - 20px);
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
 }
 
+/* Additional media query for screens smaller than 540px */
 @media screen and (max-width: 540px) {
     .list-items {
-        margin: 30px 20px;
-        /* Add margin to both sides */
+        margin: 20px;
+        min-width: calc(100% - 40px);
     }
 }
